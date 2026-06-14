@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.simulation-panel {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1f1f1f;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 24px;
+}
+
+.status-card {
+  text-align: center;
+}
+
+.status-card .ant-statistic-title {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.status-card .ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.log-panel {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.log-entry {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+}
+
+.log-entry.error {
+  background-color: #fff2f0;
+  color: #cf1322;
+}
+
+.log-entry.warn {
+  background-color: #fffbe6;
+  color: #d48806;
+}
+
+.log-entry.info {
+  background-color: #e6f7ff;
+  color: #096dd9;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.chat-message {
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.chat-message.user {
+  background: #1890ff;
+  color: white;
+  margin-left: auto;
+}
+
+.chat-message.assistant {
+  background: white;
+  color: #1f1f1f;
+  margin-right: auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.chat-input input {
+  flex: 1;
+}
